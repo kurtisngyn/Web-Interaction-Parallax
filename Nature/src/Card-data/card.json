@@ -31,16 +31,7 @@
         "id": 6, 
         "title": "Violets",
         "imageUsed": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvq2Pp-lt8zUmY_wgovZEeOI-RfJz4857Y0Q&s"
-      },
-      {
-        "id": 7, 
-        "title": "Sunflowers",
-        "imageUsed": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_EWynWolH_lbRS0hjCMs-NrsS1tfyEGEFqw&s"
-      },
-      {
-        "id": 8, 
-        "title": "Carnations",
-        "imageUsed": "https://wardsfarmflowers.com/wp-content/uploads/2021/08/Carnations.jpg"
+      
       }
     ]
   }

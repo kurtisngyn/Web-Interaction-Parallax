@@ -1,16 +1,15 @@
 import React from "react";
 import Header from "../components/Header";
-import HeroBanner from "../components/Hero";
 import CardSection from "../components/CardSection";
 import cardData from '../Card-data/card.json';
+import Parallaxhawaii from "../components/Parallaxhawaii";
 
 
 const Athome = () => {
     return (
         <div>
             <Header />
-            <HeroBanner />
-            {/* Rest of your page content */}
+            <Parallaxhawaii />
             <CardSection cards={cardData.cardImage} />
         </div>
     );

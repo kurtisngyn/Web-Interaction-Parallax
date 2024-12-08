@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Footer";
 import Japan from "./pages/Japan";
 import Brunswick from "./pages/Brunswick";
-import AtHome from "./pages/AtHome";
+import Hawaii from "./pages/Hawaii";
 
 const App = () => {
 
@@ -12,7 +12,7 @@ const App = () => {
       <Routes>
         <Route path= "/" element={<Layout />}>
         <Route index element={<Brunswick />} />
-        <Route path="athome" element={<AtHome />} />
+        <Route path="hawaii" element={<Hawaii />} />
         <Route path="brunswick" element={<Brunswick />} />
         <Route path="japan" element={<Japan />} /> 
         </Route>      
