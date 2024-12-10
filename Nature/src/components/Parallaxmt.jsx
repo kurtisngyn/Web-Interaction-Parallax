@@ -47,7 +47,7 @@ const Parallax = () => {
       {/* Content Overlay */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center font-bold text-white">
         <h1 className="text-4xl">Brunswick Mountian</h1>
-        <p className="text-lg">Scroll to see the images move at different speeds.</p>
+        <p className="text-lg">Highest Northshore peak elevation - 1788 M</p>
       </div>
     </div>
   );

@@ -27,8 +27,8 @@ const Parallax = () => {
       
       {/* Content Overlay */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-black font-bold">
-        <h1 className="text-4xl">Hawaii trip</h1>
-        <p className="text-lg">A gallery of my Japan shoots</p>
+        <h1 className="text-4xl">Tropical Series</h1>
+        <p className="text-lg">Sunset Chaser</p>
       </div>
     </div>
   );
