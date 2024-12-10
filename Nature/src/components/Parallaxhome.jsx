@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import layer1 from "../assets/homeme.png";  // Background sky image
 import layer2 from "../assets/homebg.png";
 
-
 const Parallax = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -35,9 +34,9 @@ const Parallax = () => {
       />
       
       {/* Content Overlay */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-black font-bold">
-        <h1 className="text-4xl">Parallax View</h1>
-        <p className="text-lg">A photo gallery for myself</p>
+      <div className="absolute top-1/2 left-0 transform -translate-y-1/2 text-left pl-8 text-black font-bold">
+        <h1 className="text-6xl md:text-8xl leading-tight">Parallax View</h1>
+        <p className="text-2xl md:text-4xl mt-4">A photo gallery for myself</p>
       </div>
     </div>
   );
