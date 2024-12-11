@@ -8,9 +8,6 @@ const Home = () => {
         <div>
             <Header />
             <Parallaxhome />
-
-            
-            {/* Rest of your page content */}
             <About />
         </div>
     );

@@ -1,15 +1,15 @@
 import React from "react";
 import Header from "../components/Header";
-import CardSection from "../components/CardSection"; 
 import cardData2 from '../Card-data/card2.json';
 import Parallaxjp from "../components/Parallaxjp";
+import MasonryLayout from "../components/MasonryLayout";
 
 const Japan = () => {
     return (
         <div>
             <Header />
             <Parallaxjp />
-            <CardSection cards={cardData2.cardImage} />
+            <MasonryLayout items={cardData2.cardImage} />
         </div>
     );
 };
