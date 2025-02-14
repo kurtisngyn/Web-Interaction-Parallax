@@ -10,6 +10,22 @@ const Header = () => {
         <Link to="/" className="hover:underline">
           <p>Home</p>
         </Link>
+      
+      
+            
+              <Link to="/Brunswick" className="hover:text-gray-400">
+                Brunswick Mt
+              </Link>
+           
+              <Link to="/Hawaii" className="hover:text-gray-400">
+                Hawaii
+              </Link>
+            
+              <Link to="/Japan" className="hover:text-gray-400">
+                Japan
+              </Link>
+           
+  
       </div>
     </header>
   );
