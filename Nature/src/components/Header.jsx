@@ -10,9 +10,6 @@ const Header = () => {
         <Link to="/" className="hover:underline">
           <p>Home</p>
         </Link>
-      
-      
-            
               <Link to="/Brunswick" className="hover:text-gray-400">
                 Brunswick Mt
               </Link>
