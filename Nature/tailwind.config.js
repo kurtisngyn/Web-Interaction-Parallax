@@ -17,6 +17,7 @@ export default {
       },
       fontFamily: {
         quicksand: ['Quicksand', 'sans-serif'],
+        outfit: ['Outfit', 'sans-serif'],
       },
     },
   },
