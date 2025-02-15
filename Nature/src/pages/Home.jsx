@@ -5,12 +5,13 @@ import About from "../components/About";
 
 const Home = () => {
     return (
-        <div className=" border-2 border-black p-4">
+        <div className=" bg-black">
+        <div className=" border-2 border-white p-4 mx-6 my-6">
         
                 <Header />
-                <Hero />
+                {/* <Hero /> */}
                 {/* <About /> */}
-            
+            </div>
         </div>
     );
 };

@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="fixed right-0 z-50 px-4 py-4 font-outfit text-white text-xl">
-      <div className="flex flex-col items-end space-y-4">
+    <header className="fixed right-0 z-50 px-8 py-4 font-outfit text-white text-xl">
+      <div className="flex flex-col items-end space-y-2">
         {/* Wrap the icon with a Link component to route to the home page */}
         <Link to="/" className="hover:underline">
           <p>start</p>
