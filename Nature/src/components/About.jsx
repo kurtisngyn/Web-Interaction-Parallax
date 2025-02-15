@@ -1,30 +1,33 @@
 import React from "react";
 import rice from "../assets/rice.jpg"; 
+
+
+
 function About() {
-    return (
-        // Image card of myself
-        <div className="flex flex-col md:flex-row items-center md:items-start max-w-6xl mx-auto p-4 gap-8 mt-6">
-            <div className="w-full md:w-1/2">
-                <img
+  return (
+    <div
+      className="flex justify-center gap-10 rounded-lg"
+      data-aos="fade-up"
+    >
+      <div className="flex p-10 rounded-2xl  gap-5">
+        <div className="flex-1 p-7 bg-white rounded-lg">
+          <h2 className="text-xl sm:text-2xl font-bold text-black  mb-4">
+            Outside of work...
+          </h2>
+          <p className="text-black text-base sm:text-lg leading-relaxed">
+            I’m always seeking inspiration from the world around me. Whether it’s hiking through nature, exploring new destinations, or diving into new hobbies, I enjoy using these adventures to spark new ideas that bring fresh perspectives to my design work.
+          </p>
+        </div>
+        <div className="w-2/5">
+        <img
                     src={rice}
                     alt="Asianguy"
-                    className="rounded-lg shadow-lg w-full h-auto object-cover"
+                    className="rounded-lg shadow-lg w-full max-h-[600px] object-cover"
                 />
-            </div>
-
-            {/* Right Section - Text */}
-            <div className="w-full md:w-1/2">
-                <h1 className="text-3xl font-bold text-gray-800 mb-4">About this</h1>
-                <p className="text-gray-600 leading-relaxed">
-                Welcome to Nature's Path, a digital space designed to showcase stunning photos through innovative layouts and interactive features. This project aims to provide experience for photography enthusiasts and how websites can be used to interactive with users.
-                </p>
-                
-                <p className="text-gray-600 leading-relaxed">
-                    All these photos are taken by me.
-                </p>
-            </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
 
 export default About;
