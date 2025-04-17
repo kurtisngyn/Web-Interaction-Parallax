@@ -1,13 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import Isotope from 'isotope-layout';
-// Used https://isotope.metafizzy.co/layout to help find out layout options
+import imagesLoaded from 'imagesloaded';
 
 const MasonryLayout = ({ items }) => {
   const gridRef = useRef(null);
   const isoRef = useRef(null);
 
   useEffect(() => {
-    isoRef.current = new Isotope(gridRef.current, {
+    const iso = new Isotope(gridRef.current, {
       itemSelector: '.grid-item',
       percentPosition: true,
       masonry: {
@@ -16,21 +16,29 @@ const MasonryLayout = ({ items }) => {
       },
     });
 
+    isoRef.current = iso;
+
+    // Trigger layout only after images are fully loaded
+    imagesLoaded(gridRef.current, () => {
+      iso.layout();
+    });
+
     return () => {
-      isoRef.current.destroy();
+      iso.destroy();
     };
   }, []);
 
   useEffect(() => {
     if (isoRef.current) {
-      isoRef.current.reloadItems();
-      isoRef.current.arrange();
+      imagesLoaded(gridRef.current, () => {
+        isoRef.current.reloadItems();
+        isoRef.current.arrange();
+      });
     }
   }, [items]);
 
   return (
     <div ref={gridRef} className="grid w-full mt-8 px-4 mb-16 justify-center">
-      {/* Grid sizer used for the masonry layout */}
       <div className="grid-sizer w-full sm:w-1/3 md:w-1/4 lg:w-1/5"></div>
       {items.map((item, index) => (
         <div key={index} className="grid-item w-full sm:w-1/3 md:w-1/4 lg:w-1/5 p-2">
