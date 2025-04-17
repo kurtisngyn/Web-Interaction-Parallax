@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import layer1 from "../assets/hawaii.jpg";  // Background sky image
-
+// import layer1 from "../assets/hawaii.jpg";  // Background sky image
+import layer1 from "../assets/hawaii/hawaii.jpg";
 
 
 const Parallax = () => {

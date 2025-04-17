@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import layer1 from "../assets/jp.jpg";  // Background sky image
+// import layer1 from "../assets/jp.jpg";  // Background sky image
+import layer1 from "../assets/jp/jp.jpg";
 
 
 
