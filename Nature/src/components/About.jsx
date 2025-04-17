@@ -1,5 +1,4 @@
 import React from "react";
-import rice from "../assets/rice.jpg";
 import abt from "../assets/abt/cam.jpeg";
 
 function About() {

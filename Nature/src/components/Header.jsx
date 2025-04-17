@@ -1,23 +1,33 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 200); // adjust 200 to whatever scroll distance you want
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const baseColor = isHome && !scrolled ? "black" : "white";
+  const hoverColor = isHome && !scrolled ? "hover:text-gray-600" : "hover:text-gray-300";
+
+  const linkStyle = `text-${baseColor} underline decoration-${baseColor} ${hoverColor}`;
+
   return (
-    <header className="fixed right-0 z-50 px-8 py-10 font-outfit text-white text-xl">
+    <header className="fixed right-0 z-50 px-8 py-10 font-outfit text-xl">
       <div className="flex flex-col items-end space-y-2">
-        {/* Wrap the icon with a Link component to route to the home page */}
-        <Link to="/" className="hover:underline">
-          <p>start</p>
-        </Link>
-        <Link to="/Brunswick" className="hover:text-gray-400">
-          brunswick
-        </Link>
-        <Link to="/Hawaii" className="hover:text-gray-400">
-          hawaii
-        </Link>
-        <Link to="/Japan" className="hover:text-gray-400">
-          japan
-        </Link>
+        <Link to="/" className={linkStyle}>start</Link>
+        <Link to="/Brunswick" className={linkStyle}>brunswick</Link>
+        <Link to="/Hawaii" className={linkStyle}>hawaii</Link>
+        <Link to="/Japan" className={linkStyle}>japan</Link>
       </div>
     </header>
   );
